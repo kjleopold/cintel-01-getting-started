@@ -41,16 +41,20 @@ def main() -> None:
     """
     log_header(LOG, "CINTEL")
 
-    LOG.info("========================")
+    # Define a separator variable to reduce repeated "=" characters in the log output and improve code readability.
+
+    separator = "========================"
+
+    LOG.info(separator)
     LOG.info("START main()")
-    LOG.info("========================")
+    LOG.info(separator)
 
     log_path(LOG, "ROOT_DIR", ROOT_DIR)
     log_path(LOG, "DOCS_DIR", DOCS_DIR)
 
-    LOG.info("========================")
+    LOG.info(separator)
     LOG.info("Pipeline executed successfully!")
-    LOG.info("========================")
+    LOG.info(separator)
     LOG.info("END main()")
 
 
